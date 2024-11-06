@@ -12,7 +12,7 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      redirect: '/register',
     },
     {
       name: '用户列表',
@@ -24,16 +24,6 @@ export default defineConfig({
       path: '/register',
       component: './Register',
       layout: false,
-    },
-    {
-      name: '首页',
-      path: '/home',
-      component: './Home',
-    },
-    {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
     },
   ],
   npmClient: 'pnpm',
